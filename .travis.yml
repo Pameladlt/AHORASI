@@ -1,13 +1,1 @@
 language: java
-sudo: false # faster builds
-
-- wget http://chromedriver.storage.googleapis.com/2.24/chromedriver_linux64.zip
-- unzip chromedriver_linux64.zip -d 
-/home/travis/virtualenv/python2.7.12/bin/
-- export CHROME_BIN=chromium-browser
-
-script: java "TestIndex"
-
-  
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
