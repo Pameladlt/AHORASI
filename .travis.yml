@@ -6,10 +6,8 @@ sudo: false # faster builds
 /home/travis/virtualenv/python2.7.12/bin/
 - export CHROME_BIN=chromium-browser
 
-script: "mvn cobertura:cobertura"
+script: java "TestIndex"
 
-after_failure:
-  - cat target/surefire-reports/*.txt
   
 after_success:
   - bash <(curl -s https://codecov.io/bash)
