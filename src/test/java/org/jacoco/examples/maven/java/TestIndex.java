@@ -29,7 +29,7 @@ public class TestIndex {
     @BeforeClass
     public static void setUp() {
         //setear el driver
-        //System.setProperty("webdriver.chrome.driver","C:\\Users\\Pamela De la torre\\Documents\\AAAAAA TODO\\ABEMARIA\\PruebasFuncionalesMyList\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\Pamela De la torre\\Documents\\AAAAAA TODO\\ABEMARIA\\PruebasFuncionalesMyList\\chromedriver.exe");
         //abrir chrome
         driver = new ChromeDriver(); 
         driver.get(URL);
